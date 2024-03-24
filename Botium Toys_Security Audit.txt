@@ -1,0 +1,138 @@
+Security Analyst: Christopher D’Angelantonio
+
+
+Controls and Compliance Checklist           (Botium Toys)
+
+
+Controls assessment checklist:
+
+
+Yes            No           Control                                      Comments
+
+
+                    *     Least privilege                     Botium Toys's SPI and PII as well as             confidential business data is at risk for exploitation, since all employees have non-controlled access to it.
+ 
+                    *     Disaster recovery plan      Botium Toys needs an effective and a regulatory sound disaster recovery plan, to bolster current business productivity as well as to reinforce future business continuity.
+
+
+                    *     Password policies              Despite there being a password policy in place, it lacks the dynamic password requirements required for the organization to meet their industry security standards and to uphold regulatory compliance as well.
+
+
+                    *     Separation of duties           Separation of duties needs to be upheld to limit the potential occurrence of fraud or data exploitation by allowing a single entity to have too much access to sensitive information or granting them too much power in that regard. For example, the company's CEO is in charge of too many business processes, since he is in charge of ongoing business operations as well as payroll. 
+
+
+  *                       Firewall                                   The IT department has a proper and sufficient firewall in place, that delegates network access depending on whether data requests rightfully align with their specified security parameters.
+
+
+                    *     Intrusion Detection System (IDS)    Botium Toys's IT department has not installed an essential IDS system within their existing security infrastructure, which leaves their integral network and IT systems at risk of being compromised by live threat actors or potential security breaches.
+
+
+                    *     Backups                   Their IT department does not have backup procedures and plans to revitalize their critical data upon system failure or shutdowns.
+ 
+  *                       Antivirus software   Their IT department has an effective and up-to-date antivirus software implemented. 
+                    *     Manual monitoring, maintenance, and interventional legacy systems
+
+
+Although Botium Toys's legacy systems are being managed and monitored regularly, their IT department lacks consistent scheduling for executing these tasks as well as are devoid of an effective intervention strategy.
+
+
+                    *     Encryption                     Their IT department has not encrypted their organizational data at all stages of its life cycle, which exposes the credit card and sensitive PPI or SPI of their customers to threats such as fraud, theft and various malicious methods of exploitation.
+
+
+                    *     Password management system        Currently, there are no password management systems implemented that follow the necessary minimal requirements of applicable data privacy regulations as well as their standing password policy, which tends to stagnate the organization's operational productivity due to its employees having to constantly submit password reset and modification request tickets to their IT department.
+   *                      Locks (Offices, storefront, warehouse)            Botium Toy's physical locations like storefronts, offices and warehouse facilities have effective door locks in place to deter unauthorized threats actors as well as protect systematic assets and surface areas.
+
+
+   *                      Closed Circuit Television (CCTV) surveillance                    The IT department has implemented CCTV surveillance cameras within designated areas in order to monitor physical access points throughout their organizational confines.
+
+
+   *                      Fire detection/prevention (Fire alarms, sprinkler system, etc.)
+Essential FD and FP systems are installed to protect their physical business locations as well as their assets or data from potential disasters. 
+
+
+Payment Card Industry Data Security Standard (PCI DSS) Compliance checklist:
+
+
+Yes    No             Best practice                                     
+             *        Only authorized users have access to customers’ credit card information.
+
+                      Note: All employees have access to SPI or credit card information of customers. Thus, a least privilege control must be implemented to properly enable rightful access of customer data as well as sensitive information.
+
+            *        Credit card information is stored, accepted, processed, and transmitted internally, in a secure environment.
+
+                      Note: Although their Botium Toy’s IT department processes, transmits and compiles customer credit card information internally, it is apparent that this data environment can not be deemed as secure necessarily, being that major security gaps as discussed prior still remain an issue within their current security framework. Thus, the company ought to make the necessary adjustments to their security controls to better reinforce their security posture. 
+
+            *       Implement data encryption procedures to better secure credit card transaction touchpoints and data.
+
+                      Note: Their IT department has failed to implement protective encryptions over their customers financial information as well as their SPI, which leaves their credit card information exposed to potential threat actors. 
+
+            *        Adopt secure password management policies.
+
+                      Note: Their IT department needs to re-implement a more regulatory-appropriate password management system, that better aligns with the dynamic password requirements specified within their complex password policies and management procedures. Essentially, reestablishing a more airtight password procedure would enable Botium Toy’s IT department, to improve their companies overall security posture via requiring passwords to contain a specific number of special characters in order to maintain a healthy alignment with applicable regulatory policies as well as with their dynamic password policy parameters, which ultimately helps promote employee productivity and a better sense of  business continuity moving forward. 
+
+General Data Protection Regulation (GDPR)
+Yes
+
+      
+    No
+
+     *
+Best practice                                        
+
+E.U. customers’ data is kept private/secured.
+
+Note: Their security framework still appears to lack the quintessential need for customer data to be protected from all access points via encryption.
+
+
+
+          *                     There is a plan in place to notify E.U. customers within 72 hours if their data is compromised/there is a breach.
+
+                                   Note:Botium’s IT department has a sufficient 72 hour incident response plan for notifying their E.U-based customers upon discovery of a live threat actor as well as in-depth security strategies for maintaining a safety-first data privacy policy, to oversee that the overall accessibility of their E.U-related customer information is minimally permitted in accordance with regulations set forth in the GDPR and to ultimately make sure that the confidentiality or integrity of EU-based data remains securely in tact.
+
+                       *         Ensure data is properly classified and inventoried.
+
+                                   Note: Botium Toy's IT department has not properly established the right data classification for its assets, but has executed the proper steps to inventory their organization. It is imperative that their IT department takes the time to properly classify their data according to their individual risk assessments, vulnerabilities and sensitivities, so that they may determine the necessary security controls to protect them based on each of their sensitivities or regulatory stipulations.
+
+          *                      Enforce privacy policies, procedures, and processes to properly document and maintain data.
+
+                                   Note: Botium Toys’s IT department has deliberately implemented as well as actively adheres to an efficient set of data privacy-focused policies, processes and procedures in order to rightfully compile their data according to applicable data-privacy regulation or industry standards. 
+
+System and Organizations Controls (SOC type 1, SOC type 2)
+
+Yes        No                Best practice
+                                      
+                *                   User access policies are established.
+
+                                     Note: Botium Toy’s IT department has not established the user authorization policies needed, to safely delegate permissions for defining which employees ought to have access to what data as well as the extent of their access, based on their individual job roles and responsibilities or applicable regulatory parameters. Thus, it is imperative for their IT department to implement security controls like separation of duties as well as least privilege in order to properly allocate employee data permissions and to deter any potential acts of data exploitation or regulatory violation. 
+                *                   Sensitive data (PII/SPII) is confidential/private.
+
+                                     Note: Botium Toys’s PII and SPII has not had its data’s confidentiality as well as its overall privacy maintained, since their integral security framework, that houses its sensitive customer data lacks the quintessential authoritarian user access policies and data encryptions needed to ensure the sanctity of their, especially being that all employees have unrestricted access to all sensitive customer information. 
+   *                                Data integrity ensures the data is consistent, complete, accurate, and has been validated.
+
+                                     Note: Their IT department has established the proper data availability parameters and integrated system mechanisms in order to secure the integrity of their organizational as well as their customer data.
+                *                  Data is available to individuals authorized to access it.
+
+                                     Note:Despite data being accessible to employees, there needs to be a strict access control list established in order to correctly regulate access permissions to each individual employee, based on their individual job role as well as their associative responsibilities or duties. 
+
+Summary of Recommendations:
+
+After conducting a thorough security audit of Botium Toy’s present security plan, I have concluded that the following security controls ought to be integrated within Botium Toys’s current organizational infrastructure and security framework in order to streamline a more CIA conscious security posture for better safeguarding SPI or PPI, which are the following:
+
+Disaster recovery plans
+Password policies
+Least privilege
+Separation of duties
+Intrusion detection systems
+Active legacy system management
+Password management system
+Data Encryption
+
+In terms of complying with applicable data-privacy regulations and meeting the standards of the NIST CSF, to fill the gaps within Botium Toys’s CS framework, I would recommend that their IT team implements essential security controls such as the following:
+
+Standardized data encryptions
+Separation of duties
+Concept of least privilege
+Distinguish assets that require extra layers of security controls
+
+Essentially, upon Botium Toys’s IT department integrating these supplemental security controls within their existing security framework, the rapidly expanding organization is sure to see a rebalancing within their security effectiveness as far as safeguarding their PII or SPI as well as apparent enhancements to their overall security posture moving forward.
+
