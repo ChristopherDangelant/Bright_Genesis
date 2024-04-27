@@ -1,0 +1,38 @@
+Cybersecurity Incident Report(2)
+
+Section 1: Identify the type of attack that may have caused this 
+network interruption
+One potential explanation for the website's connection timeout error message: 
+
+It could be a direct result of a DOS attack, which would shutdown the organization's web server.
+
+The logs show that:
+
+After receiving an automated message indicating a problem with the companies web server from a relative (SIEM) tool or monitoring system, I utilized a packet sniffer to analyze data packets in transmission between their employee client machines, for which IPs ranged from (198.51.100.0/24) as well as their web server (192.0.2.1) and discovered an abnormally vast amount of SYN requests being sent from an unsuspecting IP address. Additionally, the TCP/HTTP log reflected individualized log entries of the data transmissions, that took place between customers browsing the employee’s website and their companies web server, which began at log entry No. 47, which meant that 47 entries occurred from the time the network analyzer or packet sniffer began to examine data packets in transit. Based on my observations of the log, I found that connections were established between their web server and legitimate customers successfully up until log No. 73, but the server began showing signs of struggle due, to its instability to handle further customer request in conjunction with the redundancy  of SYN request being maliciously sent from the attackers IP address (203.0.113.0). From that point onward, the log reflects that customers began having trouble maintaining synchronicity with the web server as well as started receiving [RST,ACK] packet responses from the gateway server HTTP/1.1 504 Gateway server, which is an Time-out (text/html) error message sent on behalf of the destination server 192.0.2.1 due to it failing to respond to SYN/ACK requests in a appropriate amount of time. Consequently, this problematic cyber phenomena further continued up until log No. 125, where then the  server seized all responses to customer data requests therefourth. Thus, my premise is that a Direct Dos SYN flood attack on the server was clearly evident, based on these series of log records exhibiting blatant indicators of such an attack. Therefore, I responded accordingly as well as quickly to corresponding incident response procedures, to mitigate the threat from causing further damage to the companies web server by inhibiting its ability to interact and communicate effectively with legitament network traffic.
+
+This event could be: 
+
+I believe the event could be a DOS direct SYN flood attack because upon reviewing the Wireshark TCP/HTTP log, I noticed that the attack originates from a singular as well as unfamiliar IP address, for which would need to impersonate an authorized TCP/IP handshake in order to gain access to their companies web server, to subsequently flood it with an overwhelming number of SYN requests. 
+
+
+
+
+
+Section 2: Explain how the attack is causing the website to malfunction
+When website visitors try to establish a connection with the web server, a three-way handshake occurs using the TCP protocol. Explain the three steps of the handshake:
+
+1. Firstly, a client network initiates a TCP/IP handshake with a desired web server in order to gain access to a website or web pages via sending a SYN request to their relative server, which requests the destination IP address from that server in order to begin forming a synchronized connection between both entities for subsequent data transmission. 
+
+2. The destined web server then sends a SYN/ACK request back to the source IP address or requesting client machine of the initial SYN request in order to acknowledge the request from the TCP/IP protocol as well as to resume a synchronized connection via the TCP/HTTP protocol between the web server and the client for subsequent data transmission.
+
+3.The source IP address or client then returns an ACK request in order to finalize mutual acknowledgment and establishment of the two-way TCP/HTTP synchronized connection between both parties.
+
+Explain what happens when a malicious actor sends a large number of SYN packets all at once:
+
+When an attacker sends a unprecedently vast amount of SYN packets to a web server, it deliberately overwhelms the web server and forces it to not be able to function as it should or handle any more SYN requests from legitimate sources. Consequently, the targeted web server shuts down and halts from accepting additional TCP/IP handshake requests or SYN packets as a result of the congested web socket or server.
+
+Explain what the logs indicate and how that affects the server:
+
+The logs indicated that the web server of the companies website has most likely been compromised or under attack and as a result, had returned the following error message, to the client browser upon requesting connection to their company webpage. Evidently, the overwhelming number of SYN requests being sent to the web server from an unfamiliar IP address suggests that this error message and client issue was the result of an ongoing SYN flood attack, which requires TCP/IP handshake imitation followed by an abnormal flood of SYN packets to occur. Ultimately, these findings prompted the immediate counter action of incident response procedures in order to mitigate further operational damage or web issues from happening and to prevent future ones from transpiring. 
+
+
